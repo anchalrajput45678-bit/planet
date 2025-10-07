@@ -1,0 +1,61 @@
+/* =======================
+   Global CSS for all sections
+   ======================= */
+
+.global-text {
+    font-family: 'Helvetica', sans-serif !important;
+    color: #333333 !important; /* Paragraph color */
+    line-height: 1.6 !important;
+    font-size: 16px !important; /* Base paragraph size */
+    max-width: 700px !important; /* Professional width */
+    margin: 0 auto; /* Center align if needed */
+}
+
+/* Headings inside global-text */
+.global-text h1, 
+.global-text h2, 
+.global-text h3, 
+.global-text h4, 
+.global-text h5, 
+.global-text h6 {
+    font-family: 'Helvetica', sans-serif !important;
+    color: #1D3E6E !important; /* Heading color */
+    line-height: 1.2 !important;
+    margin-bottom: 0.5em !important;
+    font-weight: 600 !important;
+}
+
+/* Heading sizes */
+.global-text h1 { font-size: 2.5rem !important; }
+.global-text h2 { font-size: 2rem !important; }
+.global-text h3 { font-size: 1.75rem !important; }
+.global-text h4 { font-size: 1.5rem !important; }
+.global-text h5 { font-size: 1.25rem !important; }
+.global-text h6 { font-size: 1rem !important; }
+
+/* Paragraph inside global-text */
+.global-text p {
+    font-size: 1rem !important;
+    margin-bottom: 1em !important;
+}
+
+/* Links inside global-text */
+.global-text a {
+    color: #1D3E6E !important;
+    text-decoration: none !important;
+}
+
+.global-text a:hover {
+    text-decoration: underline !important;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .global-text h1 { font-size: 2rem !important; }
+    .global-text h2 { font-size: 1.75rem !important; }
+    .global-text h3 { font-size: 1.5rem !important; }
+    .global-text h4 { font-size: 1.25rem !important; }
+    .global-text h5 { font-size: 1.1rem !important; }
+    .global-text h6 { font-size: 1rem !important; }
+    .global-text p { font-size: 0.95rem !important; }
+}
