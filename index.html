@@ -358,9 +358,25 @@
 
 <!-- Top Navbar -->
 <div class="topbar">
-  <div class="top-left">
-    <a href="mailto:info@planetenviro.in"><i class="fas fa-envelope"></i> info@planetenviro.in</a>
-  </div>
+   <div class="top-left" style="display:flex; gap:20px; align-items:center; padding:10px 20px;">
+  <!-- Email -->
+  <a href="mailto:info@planetenviro.in" style="text-decoration:none; color:#FFFFFF; font-weight:500; display:flex; align-items:center; gap:5px;">
+    <i class="fas fa-envelope"></i> info@planetenviro.in
+  </a>
+
+  <!-- Active Call Button -->
+  <a href="tel:+919876543210" style="text-decoration:none; background:#7BB640; color:#FFFFFF; font-weight:bold; padding:8px 15px; border-radius:5px; display:flex; align-items:center; gap:5px; transition: background 0.3s;">
+    <i class="fas fa-phone"></i> +91 98765 43210
+  </a>
+</div>
+
+<style>
+/* Hover effect for call button */
+.top-left a[href^="tel:"]:hover {
+  background: #5B8C29; /* Slightly darker green for hover */
+}
+</style>
+
   <div class="top-right">
     <!-- Combined Toggle Box for Quote and Brochure -->
     <div class="toggle-box quote-active" id="toggleBox">
