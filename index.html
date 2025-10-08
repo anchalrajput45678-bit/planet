@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -373,8 +373,9 @@
     <!-- Combined Toggle Box for Quote and Brochure -->
     <div class="toggle-box quote-active" id="toggleBox">
       <div class="toggle-slider"></div>
-      <button class="toggle-btn" onclick="setActive('quote')">Get a Quote</button>
-      <button class="toggle-btn" onclick="setActive('brochure')">Get Brochure</button>
+      <button class="toggle-btn" onclick="window.location.href='./Getaquote.html'">Get a Quote</button>
+<button class="toggle-btn" onclick="window.location.href='./brochure.html'">Get Brochure</button>
+   
     </div>
     
     <a href="https://www.linkedin.com/company/mantras-innovation-solutions-private-limited/" target="_blank" class="social-icon" title="LinkedIn">
@@ -408,6 +409,16 @@
         <a href="./ourVision.html">Our Vision</a>
       </div>
     </li>
+
+    <li class="has-dropdown">
+      <a href="#services">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+      <div class="dropdown-content">
+        <a href="./servicesEnviroService.html">Environmental Services</a>
+        <a href="./servicesSustainability.html">Sustainability Services</a>
+        <a href="./servicesCompliances.html ">Consent Management and Compliances Services</a>
+        <a href="./servicesOtherLegal.html ">Other Legal Compliance Services</a>
+      </div>
+    </li>
     <li class="has-dropdown">
       <a href="#expertise">Our Expertise <i class="fas fa-chevron-down dropdown-arrow"></i></a>
       <div class="dropdown-content">
@@ -421,15 +432,7 @@
         <a href="./expertiseWaterSolu.html">Water and Wastewater Treatment Solutions</a>
       </div>
     </li>
-    <li class="has-dropdown">
-      <a href="#services">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-      <div class="dropdown-content">
-        <a href="./servicesEnviroService.html">Environmental Services</a>
-        <a href="./servicesSustainability.html">Sustainability Services</a>
-        <a href="./servicesCompliances.html ">Consent Management and Compliances Services</a>
-        <a href="./servicesOtherLegal.html ">Other Legal Compliance Services</a>
-      </div>
-    </li>
+     
     <li><a href="#products">Products <i class="fas fa-chevron-down dropdown-arrow"></i></a>
       <div class="dropdown-content">
         <a href="./ProductsEfflunet.html">Effluent Treatment Plants (ETP) </a>
@@ -439,6 +442,15 @@
          <a href="./productsSoftners.html ">Water Softeners</a>
          <a href="./productsDmPlants.html ">DM Plants</a>
          <a href="./productsConverters.html "> Organic Waste Converters</a>
+      </div>  </li> 
+
+      <li><a href="#Others">Others<i class="fas fa-chevron-down dropdown-arrow"></i></a>
+      <div class="dropdown-content">
+        <a href="./environmentalMonitoring.html">Environmental Monitoring  </a>
+        <a href="./airPollutionControl.html"> Air Pollution Control Equipment </a>
+        <a href="./otherProducts.html "> Other Products</a>
+        <a href="./weProvide.html ">  We Provide</a>
+         
       </div>  </li> 
      <li><a href="./ourClinets.html"> Our clients </a></li>
     <li><a href="./contactUs.html">Contact Us</a>
@@ -616,17 +628,66 @@
     <div id="heroSlider" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
         
         <!-- Slide 1 - Environmental Impact Assessment -->
-        <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(91,140,41,0.4)), url('https://www.aboutcivil.org/sites/default/files/2017-12/environmental-impact-assessment.jpg') center/cover; display: flex; align-items: center; justify-content: center; opacity: 1; transition: opacity 1s ease-in-out;">
+        <!-- <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(91,140,41,0.4)), url('https://www.aboutcivil.org/sites/default/files/2017-12/environmental-impact-assessment.jpg') center/cover; display: flex; align-items: center; justify-content: center; opacity: 1; transition: opacity 1s ease-in-out;">
             <div style="text-align: center; color: #FFFFFF; padding: 30px 20px; max-width: 1200px; width: 90%; z-index: 2;">
                 <div style="display: inline-block; background: rgba(123,182,64,0.2); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; border: 1px solid rgba(123,182,64,0.5);">
                     <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: white; font-weight: 600; letter-spacing: 1px;">ISO 9001:2015 CERTIFIED  </p>
                 </div>
                 <h1 style="font-size: clamp(1.5rem, 4vw, 3rem); margin: 0 0 15px 0; font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); line-height: 1.2;">Environmental Impact Assessment</h1>
-                <p style="font-size: clamp(0.85rem, 1.8vw, 1.15rem); margin: 0 0 25px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">Comprehensive EIA services with NABET-accredited consultants for sustainable development and regulatory compliance</p>
-                <button class="slider-btn primary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: #7BB640; color: #FFFFFF; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: all 0.3s; margin: 5px;">Explore Services</button>
+                <p style="font-size: clamp(0.85rem, 1.8vw, 1.15rem); margin: 0 0 25px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">Comprehensive EIA services with NABET-accredited consultants for sustainable development and regulatory compliance</p> -->
+                <!-- <button class="slider-btn primary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: #7BB640; color: #FFFFFF; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: all 0.3s; margin: 5px;">Explore Services</button>
                 <button class="slider-btn secondary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; margin: 5px;">Contact Us</button>
             </div>
-        </div>
+        </div> -->
+
+
+
+
+
+
+
+        <div class="slide" style="position: relative; width: 100%; height: 100vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(91,140,41,0.4)), url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; display: flex; align-items: center; justify-content: center; overflow: hidden; color: #fff; text-align: center;">
+  <div style="max-width: 1000px; padding: 40px 20px; z-index: 2; animation: fadeIn 2s ease-in-out;">
+    
+    <!-- Tag -->
+     <div style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; backdrop-filter: blur(10px);">
+                    <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #FFFFFF; font-weight: 600; letter-spacing: 1px;"> ISO 9001:2015 CERTIFIED</p>
+                </div>
+
+    <!-- Heading -->
+    <h1 style="font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); line-height: 1.2; margin-bottom: 15px;">
+      Planet Enviro Services
+    </h1>
+
+    <!-- Subheading -->
+    <h2 style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 500; color: #d4f0c3; margin-bottom: 25px; text-shadow: 1px 1px 6px rgba(0,0,0,0.5);">
+      Shaping a Cleaner, Greener, and Sustainable Future
+    </h2>
+
+    <!-- Company Description -->
+    <p style="font-size: clamp(0.9rem, 1.5vw, 1.05rem); font-weight: 300; line-height: 1.6; color: #f2f2f2; text-shadow: 1px 1px 5px rgba(0,0,0,0.6); margin-bottom: 35px;">
+      A Pune-based environmental consultancy, <b>Planet Enviro Services</b> works with <b>NABET-accredited EIA consultants</b> to deliver 
+      sustainable and innovative environmental solutions. From <b>Environmental Impact Assessment (EIA)</b> and <b>Pollution Control</b> 
+      to <b>Water & Wastewater Treatment</b> and <b>Waste Management</b>, we provide end-to-end solutions that ensure regulatory compliance 
+      and promote eco-friendly growth through advanced engineering and project management.
+    </p>
+
+    <!-- Buttons -->
+    <div>
+      <button style="padding: 14px 40px; font-size: clamp(0.9rem, 1.6vw, 1.1rem); background: #7BB640; color: #fff; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: 0.3s; margin: 5px;">Explore Services</button>
+      <button style="padding: 14px 40px; font-size: clamp(0.9rem, 1.6vw, 1.1rem); background: transparent; color: #fff; border: 2px solid #fff; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: 0.3s; margin: 5px;">Contact Us</button>
+    </div>
+  </div>
+
+  <!-- Simple fade animation -->
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</div>
+
 
         <!-- Slide 2 - Pollution Control Systems -->
 
@@ -637,7 +698,7 @@
                     <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #FFFFFF; font-weight: 600; letter-spacing: 1px;">REGULATORY COMPLIANCE EXPERTS</p>
                 </div>
                 <h1 style="font-size: clamp(1.5rem, 4vw, 3rem); margin: 0 0 18px 0; font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); line-height: 1.2;">Environmental Clearances & Compliance</h1>
-                <p style="font-size: clamp(0.95rem, 2vw, 1.3rem); margin: 0 0 28px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">Expert guidance for environmental approvals, CTO, CTE, and consent management</p>
+                <!-- <p style="font-size: clamp(0.95rem, 2vw, 1.3rem); margin: 0 0 28px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">Expert guidance for environmental approvals, CTO, CTE, and consent management</p> -->
                 <button class="slider-btn primary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: #7BB640; color: #FFFFFF; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: all 0.3s; margin: 5px;">Explore Services</button>
                 <button class="slider-btn secondary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; margin: 5px;">Contact Us</button>
             </div>
@@ -647,11 +708,15 @@
         <!-- Slide 3 - Water & Wastewater Treatment -->
         <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.45), rgba(91,140,41,0.5)), url('https://upload.wikimedia.org/wikipedia/commons/4/4f/La_Crosse_wastewater_treatment_facility-2.jpg') center/cover; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 1s ease-in-out;">
             <div style="text-align: center; color: #FFFFFF; padding: 30px 20px; max-width: 1200px; width: 90%; z-index: 2;">
-                <div style="display: inline-block; background: rgba(123,182,64,0.2); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; border: 1px solid rgba(123,182,64,0.5);">
+                <!-- <div style="display: inline-block; background: rgba(123,182,64,0.2); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; border: 1px solid rgba(123,182,64,0.5);">
                     <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: white; font-weight: 600; letter-spacing: 1px;">SUSTAINABLE WATER SOLUTIONS</p>
+                </div> -->
+
+                <div style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; backdrop-filter: blur(10px);">
+                    <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #FFFFFF; font-weight: 600; letter-spacing: 1px;">SUSTAINABLE WATER SOLUTIONS </p>
                 </div>
                 <h1 style="font-size: clamp(1.5rem, 4vw, 3rem); margin: 0 0 15px 0; font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); line-height: 1.2;">Water & Wastewater Treatment</h1>
-                <p style="font-size: clamp(0.85rem, 1.8vw, 1.15rem); margin: 0 0 25px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">Cutting-edge technology for efficient water management and environmental protection</p>
+                <!-- <p style="font-size: clamp(0.85rem, 1.8vw, 1.15rem); margin: 0 0 25px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">Cutting-edge technology for efficient water management and environmental protection</p> -->
                 <button class="slider-btn primary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: #7BB640; color: #FFFFFF; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: all 0.3s; margin: 5px;">Explore Services</button>
                 <button class="slider-btn secondary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; margin: 5px;">Contact Us</button>
             </div>
@@ -660,11 +725,14 @@
         <!-- Slide 4 - Environmental Clearances -->
          <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(123,182,64,0.35), rgba(0,0,0,0.55)), url('https://www.boldrocchigroup.com/wp-content/uploads/2019/01/IsolaDelleFemmine.jpg') center/cover; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 1s ease-in-out;">
             <div style="text-align: center; color: #FFFFFF; padding: 30px 20px; max-width: 1200px; width: 90%; z-index: 2;">
-                <div style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; backdrop-filter: blur(10px);">
+                <!-- <div style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; backdrop-filter: blur(10px);">
                     <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #FFFFFF; font-weight: 600; letter-spacing: 1px;">PUNE-BASED ENVIRONMENTAL CONSULTANCY</p>
+                </div> -->
+                <div style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; backdrop-filter: blur(10px);">
+                    <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #FFFFFF; font-weight: 600; letter-spacing: 1px;"> PUNE-BASED ENVIRONMENTAL CONSULTANCY </p>
                 </div>
                 <h1 style="font-size: clamp(1.5rem, 4vw, 3rem); margin: 0 0 15px 0; font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); line-height: 1.2;">Advanced Pollution Control Solutions</h1>
-                <p style="font-size: clamp(0.85rem, 1.8vw, 1.15rem); margin: 0 0 25px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">End-to-end design, installation & operation of pollution control systems for industries</p>
+                <!-- <p style="font-size: clamp(0.85rem, 1.8vw, 1.15rem); margin: 0 0 25px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">End-to-end design, installation & operation of pollution control systems for industries</p> -->
                 <button class="slider-btn primary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: #7BB640; color: #FFFFFF; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: all 0.3s; margin: 5px;">Explore Services</button>
                 <button class="slider-btn secondary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; margin: 5px;">Contact Us</button>
             </div>
@@ -673,11 +741,15 @@
         <!-- Slide 5 - Environmental Monitoring -->
         <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(91,140,41,0.45)), url('https://plus.unsplash.com/premium_photo-1711238064720-af60134e892f?q=80&w=1171&auto=format&fit=crop') center/cover; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 1s ease-in-out;">
             <div style="text-align: center; color: #FFFFFF; padding: 30px 20px; max-width: 1200px; width: 90%; z-index: 2;">
-                <div style="display: inline-block; background: rgba(123,182,64,0.2); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; border: 1px solid rgba(123,182,64,0.5);">
+                <!-- <div style="display: inline-block; background: rgba(123,182,64,0.2); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; border: 1px solid rgba(123,182,64,0.5);">
                     <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #7BB640; font-weight: 600; letter-spacing: 1px;">SMART ENVIRONMENTAL MONITORING</p>
+                </div> -->
+
+                <div style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 25px; margin-bottom: 20px; backdrop-filter: blur(10px);">
+                    <p style="margin: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); color: #FFFFFF; font-weight: 600; letter-spacing: 1px;"> SMART ENVIRONMENTAL MONITORING  </p>
                 </div>
                 <h1 style="font-size: clamp(1.5rem, 4vw, 3rem); margin: 0 0 20px 0; font-weight: 700; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); line-height: 1.2;">Accurate • Reliable • Sustainable</h1>
-                <p style="font-size: clamp(1rem, 2.2vw, 1.5rem); margin: 0 0 30px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">Real-time Air, Water & Soil Quality Assessment</p>
+                <!-- <p style="font-size: clamp(1rem, 2.2vw, 1.5rem); margin: 0 0 30px 0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); color: #FFFFFF; font-weight: 300; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">Real-time Air, Water & Soil Quality Assessment</p> -->
                 <button class="slider-btn primary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: #7BB640; color: #FFFFFF; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 20px rgba(123,182,64,0.5); transition: all 0.3s; margin: 5px;">Explore Services</button>
                 <button class="slider-btn secondary-btn" style="padding: 16px 45px; font-size: clamp(0.95rem, 1.8vw, 1.15rem); background: transparent; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; margin: 5px;">Partner With Us</button>
             </div>
@@ -1254,87 +1326,248 @@
       <!-- First Set of Logos -->
       <div style="display:flex; gap:30px; align-items:center;">
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.kumarworld.com/wp-content/uploads/2017/03/Kumar_Properties_New_Logo_02.png" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://www.kumarworld.com/wp-content/uploads/2017/03/Kumar_Properties_New_Logo_02.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
         
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIUf1uP9X9FdwrvG2d9C48OJ0xSvWDhQwhA&s" alt="Client 2" style="width:100%; height:100%; object-fit:contain;">
-        </div>
         
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://img.staticmb.com/mbimages/photo_dir/developer/original_images/54160/1686290068268-Rohan-logo.jpg" alt="Rohan" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIUf1uP9X9FdwrvG2d9C48OJ0xSvWDhQwhA&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cGKFA2zBC8bR4OUMF1ReHJaKk1WTRz0qsw&s" alt="Client 4" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://img.staticmb.com/mbimages/photo_dir/developer/original_images/54160/1686290068268-Rohan-logo.jpg " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetvL8nkuNB6em2WkXqAejkEOvLv7kbRU_0g&s" alt="Client 5" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cGKFA2zBC8bR4OUMF1ReHJaKk1WTRz0qsw&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png" alt="Godrej" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetvL8nkuNB6em2WkXqAejkEOvLv7kbRU_0g&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.larsentoubro.com/media/30212/1.jpg" alt="L&T" style="width:100%; height:100%; object-fit:contain;">
+          <img src=" https://cdn.propstory.com/magicpages/NAME/16iwl4k3t9lxvmnzjulogo.jpg" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.tkelevator.com/media/baet/tke_logo_gradient_reveal_image_w450_h338.webp" alt="TK Elevator" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://is1-2.housingcdn.com/0b8ad14c/6085761b035f9ecc803dc60c2e017333/v0/medium.jpg " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.ambergroupindia.com/wp-content/uploads/2025/02/Amber-Logo-on-white.png" alt="Amber Group" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-        
+
+
         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.navayuga.com/images/logo.png" alt="Navayuga" style="width:100%; height:100%; object-fit:contain;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREi64S1FDHlOtKAfdtz8-cKm_KDnK1-kpUyg&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
         </div>
-      </div>
-      
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-0b7NzoV-y1n6SWJUmfEgDXGzRnFJswZrQ&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+<!-- 10 finished -->
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://imgcdn.houssed.com/assets/Files/Developer/FirmLogos/310_1678040168_logo19.webp " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://is1-2.housingcdn.com/0b8ad14c/3172a5c55f93678cad169a9ade111c16/v1/medium.jpg " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://images.jdmagicbox.com/v2/comp/chennai/04/044p1804/catalogue/lucas-tvs-ltd-corporate-office-mylapore-chennai-1zzqgls.jpg " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://www.tkelevator.com/media/baet/tke_logo_gradient_reveal_image_w450_h338.webp " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZwI6QefB9Pk3bROjdNZikDZ20UvjKujHhQ&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXEeNWSsuhUkoV2RHqRQrpqqxM2Q9SriGKA&s" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://medicaldialogues.in/h-upload/2022/10/06/187176-logo.webp " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaEO4Qwokl7WM69B-9c9AXnwpU60uFi_xulQ&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNDlgAt6Hg7G8Hi4DgjZlHA9JMOSDBFzJzw&s" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://www.sapphireinfotech.co.in/wp-content/uploads/2022/06/logo.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://media.licdn.com/dms/image/v2/C4D0BAQGuStP9gnRW3A/company-logo_200_200/company-logo_200_200/0/1640343627136/innovassynth_technologies_2001_logo?e=2147483647&v=beta&t=injVh67BH23txSih7R7dOX-FKCUyHRTpKyOM5_Yc5FU " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="  https://imagescdn.homes.com/i2/-vQO-sDHTZF9HDk5Oc_GCidJEVAFfCm1lH-BeBl08As/118/image.svg?t=p&p=1 " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://www.indianpharmajobs.com/getimage/698c5d70-97ca-403d-b86f-07117c601008_325x325_exact.png" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfwFnqJzhI9Pw-tWVCo6G_Ri6Pa5Yrf_cgMw&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://www.ambergroupindia.com/wp-content/uploads/2025/02/Amber-Logo-on-white.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTv3cPXnMeXYFgApdWLp-o5i0fhJg9KAmPHg&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQudFmJ3hYyo3tw9-fjEPoT7kwTobdzJl8GZA&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://kalikasteels.com/wp-content/uploads/2023/05/kalika-steels-logo.png" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYmmzFWRx-XdE9rj6Lis9wPoS12SFUnfUaQ&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://polaad.in/storage/channel/1/i6GZx2hNwJonmlFh53Ls8kukPXmBpOpehLqCXvcC.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3W9SuhwH1PUdo5I_nY8Uh8nlF_C_KBWTJLQ&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZCzaTQcTRAvRwd4yr0OMEdetYRsGT-KBiSw&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJ6Cfc-VPatH-rx6aW3iNEk54psoZNPPMUA&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuzD9amooHY4uIDLbLhyQPSZMDN4U9DC8RA&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://i0.wp.com/futurecaps.com/wp-content/uploads/2023/11/image.png?ssl=1 " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://www.larsentoubro.com/media/30212/1.jpg" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+  <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="./image6.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://media.licdn.com/dms/image/v2/D4D0BAQEeDA-c8v5aSQ/company-logo_200_200/company-logo_200_200/0/1684306212090?e=2147483647&v=beta&t=7JJD0COIVWRAgeheQx8oRNj6FB8q_on2jByHG9SPI4Q " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://media.licdn.com/dms/image/v2/D4D0BAQEK95BP703vsg/company-logo_200_200/company-logo_200_200/0/1720163106685/omat_west_limited_logo?e=2147483647&v=beta&t=QiuN9lpBg_cBon-9bzdAttoypOcFja5k3QWTrM8a874" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+          <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="./image5.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://dynamic.exportersindia.com/company_logo/3714807.jpg " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiYurzRHcA_c7EVTq2AU6Lv4_8UpmBSA9kYw&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+          <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="./image4.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://www.navayuga.com/images/logo.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGOflzEG2uGk6W9Ffzb2ywKOURyjYkxRNpg&s " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://sra.gov.in/assets/images/logo/logo-en.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+          <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="./image3.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/348d8496324001b32a0a26e8fe7d8720 " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://www.indianagratingsinc.com/pub/static/frontend/Topspot/indiana/en_US/images/logo_color.png" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRMqtSjtiJt1MKhXUjHycLKyLGkOFJrSDawqAHVYBtUfret5sqWE3ZMMRW1oJqwhCguhA&usqp=CAU " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+         <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="./image1.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+
+          <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <img src="./image2.png " alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+         
       <!-- Duplicate Set for Seamless Loop -->
-      <div style="display:flex; gap:30px; align-items:center;">
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.kumarworld.com/wp-content/uploads/2017/03/Kumar_Properties_New_Logo_02.png" alt="Kumar Properties" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIUf1uP9X9FdwrvG2d9C48OJ0xSvWDhQwhA&s" alt="Client 2" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://img.staticmb.com/mbimages/photo_dir/developer/original_images/54160/1686290068268-Rohan-logo.jpg" alt="Rohan" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cGKFA2zBC8bR4OUMF1ReHJaKk1WTRz0qsw&s" alt="Client 4" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetvL8nkuNB6em2WkXqAejkEOvLv7kbRU_0g&s" alt="Client 5" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png" alt="Godrej" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.larsentoubro.com/media/30212/1.jpg" alt="L&T" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.tkelevator.com/media/baet/tke_logo_gradient_reveal_image_w450_h338.webp" alt="TK Elevator" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.ambergroupindia.com/wp-content/uploads/2025/02/Amber-Logo-on-white.png" alt="Amber Group" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        
-        <div style="width:130px; height:130px; background:#fff; border-radius:12px; padding:15px; box-shadow:0 3px 12px rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <img src="https://www.navayuga.com/images/logo.png" alt="Navayuga" style="width:100%; height:100%; object-fit:contain;">
-        </div>
+       
+         
       </div>
       
     </div>
@@ -1562,25 +1795,25 @@
         <h3 style="color: #7BB640; font-size: 1.05rem; margin-bottom: 12px; font-weight: 700;">Our Services</h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="margin-bottom: 8px;">
-            <a href="#environmental-services" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./servicesEnviroService.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Environmental Services</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#consent-management" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./servicesOtherLegal.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Other Legal Compliance Services</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#legal-compliance" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./servicesSustainability.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Sustainability Services</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#monitoring-testing" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./servicesCompliances.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span> Consent Management and compliance</span>
             </a>
@@ -1593,35 +1826,41 @@
         <h3 style="color: #7BB640; font-size: 1.05rem; margin-bottom: 12px; font-weight: 700;">Our Products</h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="margin-bottom: 8px;">
-            <a href="#etp-plants" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./ProductsEfflunet.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>ETP Plants</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#stp-plants" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./productsSewagePlants.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>STP Plants</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#zld-plants" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./productsDischanrge.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>ZLD Plants</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#ro-uf-plants" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./productsRoUf.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>RO+UF Plants</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#water-softeners" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./productsSoftners.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Water Softeners</span>
             </a>
-          </li>
+
+ </li>
+            <a href="./productsConverters.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+              <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
+              <span>Organic Waste Converter Machines</span>
+            </a>
+           </li>
         </ul>
       </div>
       
@@ -1630,30 +1869,30 @@
         <h3 style="color: #7BB640; font-size: 1.05rem; margin-bottom: 12px; font-weight: 700;">Quick Links</h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="margin-bottom: 8px;">
-            <a href="#home" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./index.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Home</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#about-us" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./aboutcompany.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>About Us</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#contact" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./expertiseEcEIa.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Our Expertise</span>
             </a>
           <li style="margin-bottom: 8px;">
-            <a href="#gallery" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./ourClinets.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Our clients</span>
             </a>
           </li>
           <li style="margin-bottom: 8px;">
-            <a href="#contact" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
+            <a href="./contactUs.html" style="color: #d4d4d4; text-decoration: none; display: flex; align-items: center; transition: all 0.3s ease; font-size: 0.85rem;" onmouseover="this.style.color='#7BB640'; this.style.paddingLeft='5px'" onmouseout="this.style.color='#d4d4d4'; this.style.paddingLeft='0'">
               <i class="fas fa-chevron-right" style="font-size: 0.6rem; margin-right: 8px; color: #7BB640;"></i>
               <span>Contact Us</span>
             </a>
@@ -1755,7 +1994,7 @@
 
 
 <!-- footer starts -->
- <!-- Main Popup Button -->
+  <!-- Main Popup Button -->
 <div id="popupBtn" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 20px rgba(29, 62, 110, 0.4); transition: all 0.3s ease; z-index: 1000; animation: pulse 2s infinite;">
     <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1D3E6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <!-- Chat bubble -->
