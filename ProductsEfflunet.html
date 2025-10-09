@@ -633,42 +633,42 @@ Impact Assessment Study (EIA)   </a></li>
  
 <!-- 2 hero section -->
 
-<section style="width:100%;padding:60px 20px;background:#f8f9fa;font-family:Arial,Helvetica,sans-serif;box-sizing:border-box;">
+  
+ 
+<!-- 2 hero section -->
+
+<section style="width:100%;padding:40px 20px;background:#f8f9fa;font-family:Arial,Helvetica,sans-serif;box-sizing:border-box;">
   <div style="max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;gap:30px;">
     
     <!-- Left Image -->
-    <div style="flex:1 1 400px;min-width:300px;display:flex;justify-content:center;align-items:center;">
+    <div style="flex:1 1 400px;min-width:280px;display:flex;justify-content:center;align-items:center;">
       <img src="./ETP1.jpg" 
            alt="Effluent Treatment Plant" 
            style="width:100%;max-width:500px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.15);">
     </div>
 
     <!-- Right Content -->
-    <div style="flex:1 1 500px;min-width:300px;">
+    <div style="flex:1 1 500px;min-width:280px;">
       <h2 style="color:#1D3E6E;font-size:28px;margin-bottom:15px;"> </h2>
        
-
-      <p style="color:#333;line-height:1.7; font-size: clamp(0.9rem, 1.8vw, 1rem); text-align: justify;;margin-bottom:12px;">
-        Our  Effluent Treatment Plants (ETP)  are designed to treat and purify industrial wastewater 
+      <p style="color:#333;line-height:1.7;font-size:16px;text-align:justify;margin-bottom:12px;">
+        Our Effluent Treatment Plants (ETP) are designed to treat and purify industrial wastewater 
         before its discharge or reuse, ensuring complete compliance with environmental regulations. 
         Using advanced biological, chemical, and physical treatment technologies, we help industries 
         minimize their water pollution footprint and promote water recycling.
       </p>
 
-      <p style="color:#333;line-height:1.7; font-size: clamp(0.9rem, 1.8vw, 1rem); text-align: justify;;margin-bottom:12px;">
+      <p style="color:#333;line-height:1.7;font-size:16px;text-align:justify;margin-bottom:12px;">
         These systems are widely used across industries such as Automobile, Pharmaceutical, Food Processing,
-        Textile, and Chemical Manufacturing  Each ETP is custom-engineered to efficiently remove suspended 
+        Textile, and Chemical Manufacturing. Each ETP is custom-engineered to efficiently remove suspended 
         solids, organic compounds, heavy metals, and other contaminants to produce high-quality treated water.
       </p>
 
-      <p style="color:#333;line-height:1.7; font-size: clamp(0.9rem, 1.8vw, 1rem); text-align: justify;;margin-bottom:12px;">
-        From design and installation to operation and maintenance, we provide  end-to-end solutions 
-        ensuring consistent performance and sustainability. 
-      </p>
+      
 
       <div style="margin-top:20px;">
         <a href="#contact" style="background:#7BB640;color:#fff;text-decoration:none;padding:10px 20px;
-          border-radius:6px;font-weight:bold;transition:0.3s;">Get in Touch</a>
+          border-radius:6px;font-weight:bold;transition:0.3s;display:inline-block;">Get in Touch</a>
       </div>
     </div>
   </div>
@@ -676,24 +676,90 @@ Impact Assessment Study (EIA)   </a></li>
 
 <!-- Responsive Adjustments -->
 <style>
+/* Hero Section Responsive */
 @media (max-width:768px){
-  section div[style*="max-width:1200px"]{
-    flex-direction:column;
-    text-align:center;
+  section:first-of-type {
+    padding: 60px 15px !important;
   }
-  section h2{
-    font-size:24px !important;
+  
+  section:first-of-type h2 {
+    font-size: 1.5rem !important;
   }
-  section p{
-    font-size:15px !important;
+  
+  section:first-of-type svg {
+    height: 50px !important;
   }
-  section a{
-    display:inline-block;
-    margin-top:10px;
+}
+
+@media (max-width:480px){
+  section:first-of-type {
+    padding: 50px 12px !important;
+  }
+  
+  section:first-of-type h2 {
+    font-size: 1.3rem !important;
+    padding: 0 10px;
+  }
+  
+  section:first-of-type svg {
+    height: 40px !important;
+  }
+}
+
+/* Content Section Responsive */
+@media (max-width:768px){
+  section:nth-of-type(2) {
+    padding: 30px 15px !important;
+  }
+  
+  section:nth-of-type(2) > div {
+    gap: 20px !important;
+  }
+  
+  section:nth-of-type(2) img {
+    max-width: 100% !important;
+    border-radius: 8px !important;
+  }
+  
+  section:nth-of-type(2) h2 {
+    font-size: 22px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  section:nth-of-type(2) p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  section:nth-of-type(2) a {
+    font-size: 15px !important;
+    padding: 10px 18px !important;
+  }
+  
+  section:nth-of-type(2) > div > div {
+    min-width: 100% !important;
+  }
+}
+
+@media (max-width:480px){
+  section:nth-of-type(2) {
+    padding: 25px 12px !important;
+  }
+  
+  section:nth-of-type(2) > div {
+    gap: 15px !important;
+  }
+  
+  section:nth-of-type(2) h2 {
+    font-size: 20px !important;
+  }
+  
+  section:nth-of-type(2) p {
+    font-size: 14px !important;
   }
 }
 </style>
-
 
 <!-- 3 navbar  -->
   <!-- Image Slider Container -->

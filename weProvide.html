@@ -1,614 +1,595 @@
-     <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>planet Enviro Services</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-  :root{
-    --primary:#1D3E6E;
-    --secondary:#7BB640;
-    --hover:#5B8C29;
-    --bg:#FFFFFF;
-    --text:#333333;
-    --muted:#9E9E9E;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Enviro Services - Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,Segoe UI,Arial;}
-  body{background:var(--bg);color:var(--text);}
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #FFFFFF;
+        }
 
-  /* Top Navbar */
-  .topbar{
-    width:100%;
-    background:var(--primary);
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:8px 30px;
-    flex-wrap:wrap;
-  }
-  .topbar a{color:#fff;text-decoration:none;font-size:0.9rem;margin-left:12px;}
-  .topbar a:hover{color:var(--secondary);}
-  .top-left{font-size:0.9rem;}
-  .top-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
-
-  /* Combined Quote/Brochure Toggle Box */
-  .toggle-box {
+       /* Top Bar */
+.top-bar {
+    background: #1D3E6E;
+    color: #FFFFFF;
+    padding: 10px 20px;
     display: flex;
-    background: rgba(255,255,255,0.2);
-    border-radius: 50px;
-    padding: 4px;
-    position: relative;
-  }
-  .toggle-btn {
-    background: transparent;
-    color: #fff;
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-weight:600;
-    text-decoration:none;
-    transition:all 0.3s;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact-item:hover {
+    color: #7BB640;
+}
+
+.top-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-quote,
+.btn-brochure {
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
     border: none;
     cursor: pointer;
-    z-index: 1;
-    position: relative;
-  }
-  .toggle-slider {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 50%;
-    height: calc(100% - 8px);
-    background: var(--secondary);
-    border-radius: 50px;
-    transition: all 0.3s ease;
-  }
-  .toggle-box.brochure-active .toggle-slider {
-    left: 50%;
-    background: var(--primary);
-    border: 2px solid #fff;
-  }
-  .toggle-box.quote-active .toggle-slider {
-    left: 4px;
-    background: var(--secondary);
-  }
-  
-  .social-icon{
-    width:22px;
-    height:22px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-size: 1.1rem;
-  }
-  .social-icon:hover{color:var(--secondary);}
+}
 
-  /* Main Navbar */
-  .navbar{
-    width:100%;
-    background:#fff;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 30px;
-    position:relative;
-    flex-wrap:wrap;
-    /* gap: 30px; */
-  }
-  .logo{
-    display:flex;
-    align-items:center;
-  }
-  .logo img{
-    width: 150px;
-    height: auto;
-    /* max-height: 60px; */
-    object-fit:contain;
-  }
+.btn-quote {
+    background: #7BB640;
+    color: #FFFFFF;
+}
 
-  .nav-links{
-    display:flex;
-    align-items:center;
-    gap:20px;
-    flex-grow: 1;
-    justify-content: flex-end;
-  }
-  .nav-links > li > a{
-    color:var(--text);
-    text-decoration:none;
-    font-weight:600;
-    position:relative;
-    padding:8px 12px;
-    white-space: nowrap;
-    display:inline-block;
-  }
-  .nav-links > li > a:hover{color:var(--secondary);}
-  .nav-links > li{list-style:none;position:relative;}
+.btn-quote:hover {
+    background: #5B8C29;
+}
 
-  /* Dropdown - Desktop */
-  .dropdown-content{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:#fff;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-    border-radius:8px;
-    min-width:300px;
-    max-width:380px;
-    z-index:100;
-    padding:10px 0;
-    margin-top:5px;
-  }
-  .dropdown-content a{
-    display:block;
-    padding:12px 20px;
-    color:var(--text);
-    text-decoration:none;
-    white-space:normal;
-    word-wrap:break-word;
-    line-height:1.5;
-    transition:all 0.2s ease;
-    font-size:0.95rem;
-  }
-  .dropdown-content a:hover{
-    background:var(--secondary);
-    color:#fff;
-    padding-left:25px;
-  }
-  .nav-links > li:hover .dropdown-content{
-    display:block;
-  }
+.btn-brochure {
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
 
-  /* Hamburger */
-  .hamburger{
-    display:none;
-    flex-direction:column;
-    cursor:pointer;
-    gap:5px;
-  }
-  .hamburger span{
-    width:25px;
-    height:3px;
-    background:var(--primary);
-    transition: 0.3s;
-  }
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
-  
-  /* Dropdown Arrow Icon */
-  .dropdown-arrow{
-    font-size:0.7rem;
-    margin-left:5px;
-    transition:transform 0.3s;
-  }
+.btn-brochure:hover {
+    background: #FFFFFF;
+    color: #1D3E6E;
+}
 
-  /* Mobile Responsive Styles */
-  @media(max-width:900px){
-    .topbar {
-      padding: 10px 15px;
-      flex-direction: column;
-      gap: 10px;
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.social-links a {
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #7BB640;
+}
+
+/* ✅ Mobile View Update */
+@media (max-width: 768px) {
+    .contact-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-    
-    .top-left, .top-right {
-      width: 100%;
-      justify-content: center;
+
+    .contact-item.email {
+        justify-content: flex-start;
     }
-    
-    .top-left {
-      text-align: center;
-      margin-bottom: 5px;
+
+    .contact-item.phone {
+        justify-content: flex-end;
     }
-    
-    .navbar {
-      gap: 15px;
-      padding: 12px 20px;
+
+    .top-buttons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 8px;
+        flex-wrap: wrap;
     }
-    
-    .nav-links{
-      display:none;
-      flex-direction:column;
-      width:100%;
-      background:#fff;
-      position:absolute;
-      left:0;
-      top:100%;
-      padding:15px 0;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      z-index: 1000;
-      max-height:calc(100vh - 150px);
-      overflow-y:auto;
-    }
-    .nav-links.active{display:flex;}
-    
-    .nav-links > li{
-      width: 100%;
-      border-bottom:1px solid #f0f0f0;
-    }
-    .nav-links > li:last-child{
-      border-bottom:none;
-    }
-    
-    .nav-links > li > a{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:16px 25px;
-      width:100%;
-      min-height:54px;
-      touch-action: manipulation;
-      -webkit-tap-highlight-color: rgba(0,0,0,0.05);
-    }
-    
-    /* Mobile Dropdown Styles */
-    .dropdown-content{
-      position:static;
-      box-shadow:none;
-      min-width:unset;
-      width: 100%;
-      max-width:100%;
-      display:none;
-      background:#f8f9fa;
-      border-radius:0;
-      margin-top:0;
-      padding:0;
-    }
-    
-    .dropdown-content a{
-      padding:14px 25px 14px 40px;
-      font-size:0.9rem;
-      border-left:3px solid transparent;
-      min-height:50px;
-      display:flex;
-      align-items:center;
-      touch-action: manipulation;
-      -webkit-tap-highlight-color: rgba(0,0,0,0.05);
-    }
-    
-    .dropdown-content a:active{
-      background:#e0e3e7;
-    }
-    
-    .dropdown-content a:hover{
-      background:#e9ecef;
-      color:var(--primary);
-      border-left-color:var(--secondary);
-      padding-left:45px;
-    }
-    
-    .nav-links > li.dropdown-open .dropdown-content{
-      display:block;
-    }
-    
-    .nav-links > li.dropdown-open .dropdown-arrow{
-      transform:rotate(180deg);
-    }
-    
-    .hamburger{display:flex;}
-    
-    .logo img {
-      width: 200px;
-      max-height: 50px;
-    }
-    
-    .toggle-box {
-      margin: 0 auto;
-    }
-  }
-  
-  @media(max-width:600px){
-    .topbar {
-      padding: 8px 10px;
-    }
-    
-    .navbar{
-      padding:10px 15px;
-    }
-    
-    .logo img {
-      width: 170px;
-      max-height: 45px;
-    }
-    
-    .toggle-btn {
-      padding: 6px 12px;
-      font-size: 0.85rem;
-    }
-    
-    .nav-links > li > a{
-      padding:12px 20px;
-      font-size:0.95rem;
-    }
-    
-    .dropdown-content a{
-      padding:10px 20px 10px 35px;
-      font-size:0.88rem;
-    }
-  }
-  
-  @media(max-width:400px){
-    .logo img {
-      width: 150px;
-    }
-    
-    .toggle-btn {
-      padding: 5px 10px;
-      font-size: 0.8rem;
-    }
-    
-    .top-left a {
-      font-size: 0.85rem;
-    }
-  }
-</style>
+}
+
+        /* Main Navbar */
+        .navbar {
+            background: #FFFFFF;
+            padding: 12px 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding-left: 18px;
+            position: relative;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            padding-right: 88px;
+
+            align-items: center;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: #1D3E6E;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #7BB640;
+        }
+
+        .nav-link i {
+            font-size: 12px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #FFFFFF;
+            min-width: 220px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 10px 0;
+            display: none;
+            z-index: 1000;
+            margin-top: 5px;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+        }
+
+        .dropdown-menu a {
+            color: #333333;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .dropdown-menu a:hover {
+            background: #7BB640;
+            color: #FFFFFF;
+            padding-left: 25px;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background: #1D3E6E;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 1024px) {
+            .top-bar {
+                padding: 8px 15px;
+            }
+
+            .contact-info {
+                gap: 15px;
+                font-size: 12px;
+            }
+
+            .social-links {
+                margin-left: 10px;
+            }
+
+            .social-links a {
+                font-size: 16px;
+            }
+
+            .top-buttons {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 0;
+                flex-direction: column;
+                background: #FFFFFF;
+                width: 280px;
+                height: 100vh;
+                padding: 80px 20px 20px;
+                box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+                transition: left 0.3s ease;
+                overflow-y: auto;
+                gap: 0;
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                width: 100%;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .nav-link {
+                width: 100%;
+                padding: 15px 10px;
+                justify-content: space-between;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                background: #f8f9fa;
+                border-radius: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                margin-top: 0;
+            }
+
+            .nav-item.active .dropdown-menu {
+                display: block;
+                max-height: 500px;
+            }
+
+            .dropdown-menu a {
+                padding: 12px 25px;
+                font-size: 13px;
+            }
+
+            .mobile-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px 10px;
+                margin-top: 10px;
+                border-top: 2px solid #1D3E6E;
+            }
+
+            .mobile-buttons .btn-quote,
+            .mobile-buttons .btn-brochure {
+                width: 100%;
+                text-align: center;
+                padding: 12px 20px;
+            }
+
+            .close-menu {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 30px;
+                color: #1D3E6E;
+                cursor: pointer;
+                display: none;
+            }
+
+            .nav-menu.active ~ .close-menu {
+                display: block;
+            }
+
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .logo img {
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-info {
+                gap: 10px;
+            }
+
+            .contact-item {
+                font-size: 11px;
+            }
+
+            .social-links {
+                gap: 10px;
+            }
+
+            .social-links a {
+                font-size: 14px;
+            }
+
+            .logo img {
+                height: 45px;
+            }
+
+            .nav-menu {
+                width: 250px;
+            }
+        }
+
+        /* Overlay for mobile menu */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 998;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Top Navbar -->
-<div class="topbar">
-   <div class="top-left" style="display:flex; gap:20px; align-items:center; padding:10px 20px;">
-  <!-- Email -->
-  <a href="mailto:info@planetenviro.in" style="text-decoration:none; color:#FFFFFF; font-weight:500; display:flex; align-items:center; gap:5px;">
-    <i class="fas fa-envelope"></i> info@planetenviro.in
-  </a>
-
-  <!-- Active Call Button -->
-  <a href="tel:+919876543210" style="text-decoration:none;  color:#FFFFFF; font-weight:bold; padding:8px 15px; border-radius:5px; display:flex; align-items:center; gap:5px; transition: background 0.3s;">
-    <i class="fas fa-phone"></i>  +91 9860732366
-  </a>
-</div>
-  <div class="top-right">
-    <!-- Combined Toggle Box for Quote and Brochure -->
-    <div class="toggle-box quote-active" id="toggleBox">
-      <div class="toggle-slider"></div>
-      <button class="toggle-btn" onclick="window.location.href='./Getaquote.html'">Get a Quote</button>
-<button class="toggle-btn" onclick="window.location.href='./brochure.html'">Get Brochure</button>
-   
+    <div class="top-bar">
+    <div class="contact-info">
+        <a href="mailto:info@planetenviro.in" class="contact-item email">
+            <i class="fas fa-envelope"></i>
+            <span>info@planetenviro.in</span>
+        </a>
+        <a href="tel:+919860732366" class="contact-item phone">
+            <i class="fas fa-phone"></i>
+            <span> +91 9860732366</span>
+        </a>
     </div>
-    
-    <a href="https://www.linkedin.com/company/mantras-innovation-solutions-private-limited/" target="_blank" class="social-icon" title="LinkedIn">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-    <a href="https://www.instagram.com" target="_blank" class="social-icon" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </div>
+    <div class="top-buttons">
+        <a href="./Getaquote.html" class="btn-quote">Get a Quote</a>
+        <a href="./brochure.html" class="btn-brochure">Get Brochure</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/mantras-innovation-solutions-private-limited/posts/?feedView=all " target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/planetenviro/?igsh=d3U0OGx0YTBpa2lz#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
 </div>
 
-<!-- Main Navbar -->
-<nav class="navbar">
-  <div class="logo">
-    <img src="./planettttlogo.png" alt="Planet Enviro Services Logo">
-  </div>
 
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="./planettttlogo.png" alt="Planet Enviro Services">
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        About <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./aboutcompany.html">About Company</a></li>
+                        <li><a href="./ourMission.html">Our Mission</a></li>
+                        <li><a href="./ourVision.html">Our Vision</a></li>
+                        
+                    </ul>
+                </li>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="./index.html">Home</a></li>
-    <li class="has-dropdown">
-      <a href="#about">About <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-      <div class="dropdown-content">
-        <a href="./aboutcompany.html">About Company</a>
-        <a href="./ourMission.html">Our Mission</a>
-        <a href="./ourVision.html">Our Vision</a>
-      </div>
-    </li>
+                <li class="nav-item">
+                    <a href="#expertise" class="nav-link">
+                        Our Expertise <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./expertiseEcEIa.html">Environmental Clearance (EC) & Environmental
+Impact Assessment Study (EIA)   </a></li>
+                        <li><a href="./expertiseSustainability.html"> Sustainability Consulting</a></li>
+                        <li><a href="./expertiseEdDiligence.html">Environmental Due Diligence </a></li>
+                        <li><a href="./expertiseCrz.html">CRZ Clearance </a></li>
+                        <li><a href="./expertiseCompliance.html">Environmental Compliance </a></li>
+                        <li><a href="./expertiseTesting.html">Environmental Monitoring and Testing </a></li>
+                        <li><a href="./expertiseSix.html">Six Monthly Post EC Compliance </a></li>
+                        <li><a href="./expertiseWaterSolu.html">Water and Wastewater Treatment Solutions </a></li>
+                    </ul>
+                </li>
 
-    <li class="has-dropdown">
-      <a href="#expertise">Our Expertise <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-      <div class="dropdown-content">
-        <a href="./expertiseEcEIa.html">Environmental Clearance (EC) & Environmental Impact Assessment Study (EIA)</a>
-        <a href="./expertiseSustainability.html">Sustainability Consulting</a>
-        <a href="./expertiseEdDiligence.html ">Environmental Due Diligence</a>
-        <a href="./expertiseCrz.html">CRZ Clearance</a>
-        <a href="./expertiseCompliance.html">Environmental Compliance</a>
-        <a href="./expertiseTesting.html">Environmental Monitoring and Testing</a>
-        <a href="./expertiseSix.html">Six Monthly Post EC Compliance</a>
-        <a href="./expertiseWaterSolu.html">Water and Wastewater Treatment Solutions</a>
-      </div>
-    </li>
-     
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./servicesEnviroService.html">Environmental Services </a></li>
+                        <li><a href="./servicesCompliances.html"> Consent Management and Compliances</a></li>
+                        <li><a href="./servicesOtherLegal.html">Other Legal Compliances Services </a></li>
+                        <li><a href="./servicesSustainability.html">Sustainability Services </a></li>
+                        <li><a href="./environmentalMonitoring.html">Environmental Monitoring </a></li>
+                        <!-- <li><a href="#monitoring">Environmental Monitoring</a></li> -->
+                    </ul>
+                </li>
 
-    <li class="has-dropdown">
-      <a href="#services">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-      <div class="dropdown-content">
-        <a href="./servicesEnviroService.html">Environmental Services</a>
-        <a href="./servicesCompliances.html ">Consent Management and Compliances Services</a>
-          <a href="./servicesOtherLegal.html ">Other Legal Compliance Services</a>
-        <a href="./servicesSustainability.html">Sustainability Services</a>
-       <a href="./environmentalMonitoring.html">Environmental Monitoring  Services</a>
-      </div>
-    </li>
-     
-    <li><a href="#products">Products <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-      <div class="dropdown-content">
-        <a href="./ProductsEfflunet.html">Effluent Treatment Plants (ETP) </a>
-        <a href="./productsSewagePlants.html">Sewage Treatment Plants (STP) </a>
-        <a href="./productsDischanrge.html "> Zero Liquid Discharge (ZLD)</a>
-        <a href="./productsRoUf.html ">RO+UF Plants</a>
-         <a href="./productsSoftners.html ">Water Softeners</a>
-         <a href="./productsDmPlants.html ">DM Plants</a>
+                 
 
-         <a href="./productsConverters.html "> Organic Waste Converters</a>
+                <li class="nav-item">
+                    <a href="#we-provide" class="nav-link">
+                        products <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./ProductsEfflunet.html"> Effluent Treatment Plants (ETP)</a></li>
+                        <li><a href="./productsSewagePlants.html">Sewage Treatment Plants (STP)</a></li>
+                        <li><a href="./productsDischanrge.html"> Zero Liquid Discharge (ZLD)</a></li>
+                        <li><a href="./productsRoUf.html"> RO+UF Plants</a></li>
+                        <li><a href="./productsSoftners.html"> Water Softeners</a></li>
+                        <li><a href="./productsDmPlants.html">DM Plants</a></li>
+                        <a href="./productsConverters.html "> Organic Waste Converters</a>
           <a href="./airPollutionControl.html"> Air Pollution Control Equipment </a>
-      </div>  </li> 
+          
+                    </ul>
+                </li>
 
-      <li><a href="./weProvide.html">  We Provide  </a></i>
-       
-     <li><a href="./ourClinets.html"> Our clients </a></li>
-    <li><a href="./contactUs.html">Contact Us</a>
-       
-    </li>
-    
-  </ul>
-</nav>
+<li class="nav-item">
+                    <a href="./weProvide.html" class="nav-link"> We Provide</a>
+                </li>
+                 
+                <li class="nav-item">
+                    <a href="./ourClinets.html" class="nav-link">Our Clients</a>
+                </li>
 
-<script>
-  let isMobile = window.innerWidth <= 900;
-  let lastTap = 0;
-  
-  // Toggle hamburger menu
-  function toggleMenu(){
-    const navLinks = document.getElementById('navLinks');
-    const hamburger = document.getElementById('hamburger');
-    
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
-    
-    // Close all dropdowns when closing menu
-    if(!navLinks.classList.contains('active')){
-      document.querySelectorAll('.has-dropdown').forEach(item => {
-        item.classList.remove('dropdown-open');
-      });
-    }
-  }
-  
-  // Handle dropdown clicks on mobile with debounce
-  function handleDropdownClick(e){
-    if(window.innerWidth <= 900){
-      const hasDropdown = e.target.closest('.has-dropdown');
-      if(hasDropdown){
-        e.preventDefault();
-        e.stopPropagation();
-        
-        // Debounce double tap
-        const currentTime = new Date().getTime();
-        const tapLength = currentTime - lastTap;
-        
-        if(tapLength < 300 && tapLength > 0){
-          return; // Ignore double tap
-        }
-        lastTap = currentTime;
-        
-        // Add small delay for better feel
-        setTimeout(() => {
-          // Close other dropdowns
-          document.querySelectorAll('.has-dropdown').forEach(item => {
-            if(item !== hasDropdown){
-              item.classList.remove('dropdown-open');
+                <li class="nav-item">
+                    <a href="./contactUs.html" class="nav-link">Contact Us</a>
+                </li>
+
+                <!-- Mobile Buttons (shown only in mobile menu) -->
+                <!-- <div class="mobile-buttons">
+                    <a href="#quote" class="btn-quote">Get a Quote</a>
+                    <a href="#brochure" class="btn-brochure">Get Brochure</a>
+                </div> -->
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const overlay = document.getElementById('overlay');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        // Toggle mobile menu
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking overlay
+        overlay.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        // Mobile dropdown toggle
+        navItems.forEach(item => {
+            const link = item.querySelector('.nav-link');
+            const dropdown = item.querySelector('.dropdown-menu');
+            
+            if (dropdown) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 1024) {
+                        e.preventDefault();
+                        item.classList.toggle('active');
+                    }
+                });
             }
-          });
-          
-          // Toggle current dropdown
-          hasDropdown.classList.toggle('dropdown-open');
-        }, 100);
-      }
-    }
-  }
-  
-  // Add touch event listeners for better mobile experience
-  document.querySelectorAll('.has-dropdown > a').forEach(link => {
-    // Prevent multiple rapid clicks
-    let isProcessing = false;
-    
-    link.addEventListener('click', function(e){
-      if(window.innerWidth <= 900){
-        if(isProcessing) return;
-        
-        e.preventDefault();
-        e.stopPropagation();
-        
-        isProcessing = true;
-        
-        const hasDropdown = e.target.closest('.has-dropdown');
-        
-        setTimeout(() => {
-          // Close other dropdowns
-          document.querySelectorAll('.has-dropdown').forEach(item => {
-            if(item !== hasDropdown){
-              item.classList.remove('dropdown-open');
-            }
-          });
-          
-          // Toggle current dropdown
-          hasDropdown.classList.toggle('dropdown-open');
-          
-          isProcessing = false;
-        }, 150);
-      }
-    });
-  });
-  
-  // Prevent accidental clicks on dropdown items
-  document.querySelectorAll('.dropdown-content a').forEach(link => {
-    let touchStartTime = 0;
-    
-    link.addEventListener('touchstart', function(){
-      touchStartTime = new Date().getTime();
-    });
-    
-    link.addEventListener('touchend', function(e){
-      const touchDuration = new Date().getTime() - touchStartTime;
-      
-      // If touch was too quick (likely accidental), ignore it
-      if(touchDuration < 50){
-        e.preventDefault();
-        return false;
-      }
-    });
-  });
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', function(event) {
-    const navLinks = document.getElementById('navLinks');
-    const hamburger = document.getElementById('hamburger');
-    const navbar = document.querySelector('.navbar');
-    
-    if(!navbar.contains(event.target)){
-      navLinks.classList.remove('active');
-      hamburger.classList.remove('active');
-      document.querySelectorAll('.has-dropdown').forEach(item => {
-        item.classList.remove('dropdown-open');
-      });
-    }
-  });
-  
-  // Handle window resize
-  window.addEventListener('resize', function(){
-    isMobile = window.innerWidth <= 900;
-    if(!isMobile){
-      document.querySelectorAll('.has-dropdown').forEach(item => {
-        item.classList.remove('dropdown-open');
-      });
-      document.getElementById('navLinks').classList.remove('active');
-      document.getElementById('hamburger').classList.remove('active');
-    }
-  });
-  
-  // Toggle between Quote and Brochure
-  function setActive(type) {
-    const toggleBox = document.getElementById('toggleBox');
-    
-    if (type === 'quote') {
-      toggleBox.classList.remove('brochure-active');
-      toggleBox.classList.add('quote-active');
-      alert('Redirecting to Quote Form...');
-    } else {
-      toggleBox.classList.remove('quote-active');
-      toggleBox.classList.add('brochure-active');
-      alert('Downloading Brochure...');
-    }
-  }
-</script>
-<!-- end of navbar  -->
+        });
 
- 
+        // Close menu when clicking nav links on mobile
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-link') || !e.target.closest('.nav-item').querySelector('.dropdown-menu')) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                }
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                navItems.forEach(item => item.classList.remove('active'));
+            }
+        });
+    </script>
+
 
  
 
@@ -652,10 +633,7 @@
 
 <!-- end 1hero section -->
  <!-- Page Header -->
-  <header style="text-align:center; padding:50px 20px; background:white; color: black;">
-    <!-- <h1 style="font-size:clamp(1.8rem, 4vw, 2.5rem); margin:0;">Industries & Area Development</h1> -->
-    <p style="font-size:clamp(1rem, 2.5vw, 1.2rem); margin-top:10px;">Explore the sectors we serve</p>
-  </header>
+   
 
   <!-- Industries Section -->
   <main style="max-width:1200px; margin:40px auto; padding:0 20px;">
